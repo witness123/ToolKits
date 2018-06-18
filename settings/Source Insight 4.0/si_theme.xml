@@ -2408,7 +2408,7 @@
 		BrowseFragments="1"
 		UseMasterFileList="0"
 		SourceDir="."
-		BackupDir="%PROJECT_DATA_DIR%\Backup"
+		BackupDir="%PROJECT_DATA_DIR%\backup"
 		MasterFileList="%PROJECT_SOURCE_DIR%\%PROJECT_NAME%_filelist.txt"
 		/>
 	<Logging
