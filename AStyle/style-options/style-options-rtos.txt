@@ -1,0 +1,110 @@
+# HOW TO USE THIS OPTION FILE
+# astyle --options=style-default.txt --ascii --formatted --preserve-date --dry-run --suffix=none --recursive
+
+
+# Command line format:
+#    astyle  [OPTIONS]  SourceFilePath1  SourceFilePath2  SourceFilePath3  [ . . . ]
+
+# Example to format a single file:
+#    astyle  --style=allman  /home/project/foo.cpp
+
+# Example to format C++ files recursively using multiple file extensions:
+#    astyle  --style=allman  --recursive  /home/project/*.cpp,*.h
+
+################ Brace Style Options ################
+--style=break	# break/attach/kr/stroustrup/..., kr(alias k&r or k/r, Kernighan & Ritchie style) as default
+
+################ Tab Options ################
+--indent=tab=4
+
+################ Brace Modify Options ################
+--attach-namespaces
+--attach-classes
+--attach-inlines
+--attach-extern-c
+--attach-closing-while
+
+################ Indentation Options ################
+--indent-classes
+--indent-modifiers
+--indent-switches
+#--indent-cases
+--indent-namespaces
+#--indent-after-parens
+#--indent-continuation=#
+--indent-labels
+#--indent-preproc-block
+--indent-preproc-define
+--indent-preproc-cond
+--indent-col1-comments
+--min-conditional-indent=0
+--max-continuation-indent=10
+
+################ Padding Options ################
+#--break-blocks
+#--break-blocks=all
+
+--pad-oper
+--pad-comma
+
+#--pad-paren
+#--pad-paren-out
+#--pad-first-paren-out
+--pad-paren-in
+#--pad-header
+#--unpad-paren
+
+#--delete-empty-lines
+#--fill-empty-lines
+
+--align-pointer=type	#type/middle/name
+--align-reference=name	#none/type/middle/name
+
+################ Formatting Options ################
+--break-closing-braces
+#--break-elseifs
+--break-one-line-headers
+--add-braces
+--add-one-line-braces
+#--remove-braces
+
+#--break-return-type
+--attach-return-type
+#--break-return-type-decl
+--attach-return-type-decl
+
+#--keep-one-line-blocks
+#--keep-one-line-statements
+
+#--convert-tabs
+#--close-templates
+
+#--remove-comment-prefix
+
+--max-code-length=132
+--break-after-logical
+
+#--mode=c/cs/java
+
+################ Objective‑C Options ################
+
+
+################ Other Options ################
+## Keep unused for command line
+
+#--suffix=none	#--suffix=.bak
+
+#--recursive
+
+#--dry-run
+
+#--exclude=####
+#--ignore-exclude-errors
+#--ignore-exclude-errors-x
+#--errors-to-stdout
+
+#--preserve-date
+
+#--formatted		#display mode: verbose/formatted/quiet
+
+#--lineend=windows	#lineend=windows/linux/macold
